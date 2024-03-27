@@ -1,17 +1,14 @@
 using {com.task.hackathon as db} from '../db/schema';
 service MyService {
-        entity Product          as projection on db.Product{
-        @UI.Hidden
-        ID,
-        *
+        entity Product          as projection on db.Product
     };
 
     
 
-}
 
 
-    annotate MyService.Product with @odata.draft.enabled;
+
+    //annotate MyService.Product with @odata.draft.enabled;
 
     annotate MyService.Product with {
   @Common.Text : '{Product}'
