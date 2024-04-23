@@ -11,11 +11,12 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
-    "@sap/ux-specification": "^1.120.6"
+    "@sap/ux-specification": "^1.120.8"
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-product": "cds watch --open product/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-product": "cds watch --open product/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-project1": "cds watch --open project1/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "fiori": {
